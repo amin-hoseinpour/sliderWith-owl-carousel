@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- لود فایل های استایل مربوط به owl -->
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <title>Document</title>
+</head>
+<style>
+   .item{
+        background-color: rgb(167, 253, 225);
+        height: 100px;
+    }
+</style>
+<body>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+        <div class="item"><img src="mypicture.jpg"></div>
+    </div>
+
+    <!-- لود جی کوئری -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+        integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- لود فایل js مربوط به owl -->
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(function () {
+            $('.owl-carousel').owlCarousel({
+                rtl: true,
+                loop: true,
+                margin: 10,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 5
+                    }
+                }
+            })
+        });
+    </script>
+
+</body>
+</html>
+
+
